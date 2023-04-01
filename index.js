@@ -1,4 +1,7 @@
 import { DateTime } from './modules/luxon.js';
+import Navigation from './modules/navigation.js';
+
+// to import navigartion class
 
 // script for date
 setInterval(() => {
@@ -76,6 +79,7 @@ class Page {
 
 // display Books
 document.addEventListener('DOMContentLoaded', Page.retrieveToPage);
+document.addEventListener('DOMContentLoaded', Navigation);
 
 // Event:Add a Book
 document.querySelector('#add-new-book').addEventListener('submit', (e) => {
